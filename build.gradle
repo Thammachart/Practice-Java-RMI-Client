@@ -13,8 +13,7 @@ mainClassName = 'org.rmi.clients.MainClass'
 def rmiComponent = 'Practice-Java-RMI-Components'
 
 applicationDefaultJvmArgs = [
-    '-Djava.rmi.server.useCodebaseOnly=false',
-    '-Djava.rmi.server.codebase=file:./build/libs/Practice-Java-RMI-Client.jar',
+    '-Djava.rmi.server.codebase=http://localhost:8089/',    
     "-Djava.security.policy=client.policy"
 ]
 
